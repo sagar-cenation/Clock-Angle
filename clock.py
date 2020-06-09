@@ -10,6 +10,8 @@ class Clock:
         self.validate_clock()
 
     def validate_clock(self):
+        """Validates the entered time for the clock
+        """
         if not(0 <= self.hours < 12) or not (0 <= self.minutes < 60):
             raise InvalidTimeException
 
